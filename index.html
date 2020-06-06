@@ -1,0 +1,95 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+    integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+
+
+  <link rel="stylesheet" href="style.css">
+  <title>Keyboard</title>
+</head>
+
+<body>
+
+  <div class="keyboard-container container">
+    <form action="" name="form"> 
+      <textarea  class="keyboard-input form-control main-bar" placeholder="Write something"  name="distpay" rows="5" ></textarea>
+      <div class="keyboard-button d-flex justify-content-center">
+
+        <input type="button" value="1" class="btn btn-info btn-lg" name="btn" onclick="keyboard(this.value)">
+        <input type="button" value="2" class="btn btn-info btn-lg" name="btn" onclick="keyboard(this.value)">
+        <input type="button" value="3" class="btn btn-info btn-lg" name="btn" onclick="keyboard(this.value)">
+        <input type="button" value="4" class="btn btn-info btn-lg" name="btn" onclick="keyboard(this.value)">
+        <input type="button" value="5" class="btn btn-info btn-lg" name="btn" onclick="keyboard(this.value)">
+        <input type="button" value="6" class="btn btn-info btn-lg" name="btn" onclick="keyboard(this.value)">
+        <input type="button" value="7" class="btn btn-info btn-lg" name="btn" onclick="keyboard(this.value)">
+        <input type="button" value="8" class="btn btn-info btn-lg" name="btn" onclick="keyboard(this.value)">
+        <input type="button" value="9" class="btn btn-info btn-lg" name="btn" onclick="keyboard(this.value)">
+        <input type="button" value="0" class="btn btn-info btn-lg" name="btn" onclick="keyboard(this.value)">
+        <input type="button" value=" &#8592; Backspace" class="btn btn-info btn-lg" name="btn" onclick="distpay.value = distpay.value.slice(0, -1)">
+      </div>
+
+      <div class="keyboard-button d-flex justify-content-center">
+
+        <input type="button" value="q" class="btn btn-info btn-lg" name="btn" onclick="keyboard(this.value)">
+        <input type="button" value="w" class="btn btn-info btn-lg" name="btn" onclick="keyboard(this.value)">
+        <input type="button" value="e" class="btn btn-info btn-lg" name="btn" onclick="keyboard(this.value)">
+        <input type="button" value="r" class="btn btn-info btn-lg" name="btn" onclick="keyboard(this.value)">
+        <input type="button" value="t" class="btn btn-info btn-lg" name="btn" onclick="keyboard(this.value)">
+        <input type="button" value="y" class="btn btn-info btn-lg" name="btn" onclick="keyboard(this.value)">
+        <input type="button" value="u" class="btn btn-info btn-lg" name="btn" onclick="keyboard(this.value)">
+        <input type="button" value="i" class="btn btn-info btn-lg" name="btn" onclick="keyboard(this.value)">
+        <input type="button" value="o" class="btn btn-info btn-lg" name="btn" onclick="keyboard(this.value)">
+        <input type="button" value="p" class="btn btn-info btn-lg" name="btn" onclick="keyboard(this.value)">
+      </div>
+
+      <div class="keyboard-button d-flex justify-content-center">
+        <input type="button" value="a" class="btn btn-info btn-lg" name="btn" onclick="keyboard(this.value)">
+        <input type="button" value="s" class="btn btn-info btn-lg" name="btn" onclick="keyboard(this.value)">
+        <input type="button" value="d" class="btn btn-info btn-lg" name="btn" onclick="keyboard(this.value)">
+        <input type="button" value="f" class="btn btn-info btn-lg" name="btn" onclick="keyboard(this.value)">
+        <input type="button" value="g" class="btn btn-info btn-lg" name="btn" onclick="keyboard(this.value)">
+        <input type="button" value="h" class="btn btn-info btn-lg" name="btn" onclick="keyboard(this.value)">
+        <input type="button" value="j" class="btn btn-info btn-lg" name="btn" onclick="keyboard(this.value)">
+        <input type="button" value="k" class="btn btn-info btn-lg" name="btn" onclick="keyboard(this.value)">
+        <input type="button" value="l" class="btn btn-info btn-lg" name="btn" onclick="keyboard(this.value)">
+        <input type="button" value=" &#8629; Enter" class="btn btn-info btn-lg" name="btn" onclick="keyboard(`
+`)">
+      </div>
+
+      <div class="keyboard-button d-flex justify-content-center">
+
+        <input type="button" value="z" class="btn btn-info btn-lg" name="btn" onclick="keyboard(this.value)">
+        <input type="button" value="x" class="btn btn-info btn-lg" name="btn" onclick="keyboard(this.value)">
+        <input type="button" value="c" class="btn btn-info btn-lg" name="btn" onclick="keyboard(this.value)">
+        <input type="button" value="v" class="btn btn-info btn-lg" name="btn" onclick="keyboard(this.value)">
+        <input type="button" value="b" class="btn btn-info btn-lg" name="btn" onclick="keyboard(this.value)">
+        <input type="button" value="n" class="btn btn-info btn-lg" name="btn" onclick="keyboard(this.value)">
+        <input type="button" value="m" class="btn btn-info btn-lg" name="btn" onclick="keyboard(this.value)">
+        <input type="button" value="," class="btn btn-info btn-lg" name="btn" onclick="keyboard(this.value)">
+        <input type="button" value="." class="btn btn-info btn-lg" name="btn" onclick="keyboard(this.value)">
+        <input type="button" value="?" class="btn btn-info btn-lg" name="btn" onclick="keyboard(this.value)">
+      </div>
+
+      <div class="keyboard-button d-flex justify-content-center">
+
+        <input style="width: 40%;" type="button" value="[ ]" class="btn btn-info btn-lg" name="btn" onclick="keyboard(' ')">
+      </div>
+    </form>
+  </div>
+
+  <script>
+    function keyboard (x){
+        form.distpay.value = form.distpay.value + x;
+    }
+</script>
+
+</body>
+
+</html>
